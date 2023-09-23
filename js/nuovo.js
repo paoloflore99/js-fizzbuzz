@@ -7,9 +7,10 @@ for (let i = 1; i <= 100; i++) {
     // singoloQuadrato.classList.add("bg-success ext-center aling-center")
     // let singoloQuadrato = `<li class="text-center aling-center">${i}</li> `;
     // ulElement.innerHTML += singoloQuadrato;
-    singoloQuadrato.classList.add("bg-primary,text-center,align-center");
-    // singoloQuadrato.classList.add("text-center");
-    // singoloQuadrato.classList.add("align-center");
+    // singoloQuadrato.classList.add("bg-primary,text-center,align-center");
+    singoloQuadrato.classList.add("bg-primary")
+    singoloQuadrato.classList.add("text-center");
+    singoloQuadrato.classList.add("align-center");
     ulElement.append(singoloQuadrato)
     singoloQuadrato.innerHTML = i
 
@@ -20,6 +21,7 @@ for (let i = 1; i <= 100; i++) {
     // let  singoloQuadrato = document.createElement("li")
     singoloQuadrato.classList.add("bg-success")
     singoloQuadrato.innerHTML = "Fizz";
+    singoloQuadrato.classList.remove("bg-primary")
     }
 
     if ( i % 5 === 0 ) {
@@ -29,6 +31,7 @@ for (let i = 1; i <= 100; i++) {
         // let  singoloQuadrato = document.createElement("li")
         singoloQuadrato.classList.add("bg-warning")
         singoloQuadrato.innerHTML = "Buzz";
+        singoloQuadrato.classList.remove("bg-primary","bg-success")
     }
 
     
@@ -39,6 +42,7 @@ for (let i = 1; i <= 100; i++) {
         // let  singoloQuadrato = document.createElement("li")
         singoloQuadrato.classList.add("bg-danger")
         singoloQuadrato.innerHTML = "FizzBuzz";
+        singoloQuadrato.classList.remove("bg-primary","bg-success","bg-warning")
     }
 
 }
